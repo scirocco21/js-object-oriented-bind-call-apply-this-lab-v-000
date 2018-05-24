@@ -11,6 +11,6 @@ function setThisWithApply(fn, thisValue, args) {
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
-   const copyFunction = functionToBeCopied.call(thisValue);
-   return copyFunction;
+   const newFunction = functionToBeCopied.call(thisValue);
+   return newFunction;
 }
